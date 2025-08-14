@@ -1,10 +1,11 @@
 const repeatString = function(string, num) {
-  let result = string;
+  if (num < 0) return "INVALID SIZE ERROR";
 
-  for (let n = 0; n < num - 1; n++) {
+  let result = "";
+  for (let n = 0; n < num; n++) {
     result += string;
   }
-
+  
   return result;
 };
 
