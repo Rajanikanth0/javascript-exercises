@@ -1,7 +1,14 @@
-const convertToCelsius = function() {
+const convertToCelsius = function(fahrenheit) {
+  const result = (fahrenheit - 32) * 5/9;
+
+  // Round up to a single digit after decimal
+  // Convert to number using +
+  return +result.toFixed(1);
 };
 
-const convertToFahrenheit = function() {
+const convertToFahrenheit = function(celsius) {
+  const result = celsius * 9/5 + 32;
+  return +result.toFixed(1);
 };
 
 // Do not edit below this line
