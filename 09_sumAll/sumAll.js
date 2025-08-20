@@ -6,17 +6,10 @@ const sumAll = function(start, end) {
   // set start and end with lower and higher values respectively
   if (start > end) [end, start] = [start, end];
 
-  // Init final result with start
-  let result = 0;
-
-  // Iterate from start to end
-  for (let n = start; n <= end; n++) {
-    // Add n numbers to the result
-    result += n;
-  }
-
-  // Return the result
-  return result;
+  // Length of the Range
+  const len = end + 1 - start;
+  // Arithmetic formula
+  return (len / 2) * (start + end);
 };
 
 // Do not edit below this line
